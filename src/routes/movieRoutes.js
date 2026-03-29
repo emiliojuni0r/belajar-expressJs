@@ -3,19 +3,19 @@ import express from 'express'
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.json({ message: "get" })
+    res.json({ httpMethod: "get" })
 })
 
-router.post("/hello", (req, res) => {
-    res.json({ message: "post" })
+router.post("/", (req, res) => {
+    res.json({ httpMethod: "post" })
 })
 
-router.put("/hello", (req, res) => {
-    res.json({ message: "put" })
+router.put("/", (req, res) => {
+    res.json({ httpMethod: "put" })
 })
 
-router.delete("/hello", (req, res) => {
-    res.json({ message: "delete" })
+router.delete("/", (req, res) => {
+    res.json({ httpMethod: "delete" })
 })
 
 export default router;

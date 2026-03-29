@@ -42,3 +42,4 @@ temp/
 # Optional: package lock (kalau tidak ingin di-track)
 # package-lock.json
 # yarn.lock
+/src/generated/prisma
