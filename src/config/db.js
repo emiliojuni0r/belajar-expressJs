@@ -1,4 +1,5 @@
-import { PrismaClient } from "../generated/prisma/client.ts";
+import { PrismaClient } from "../generated/prisma/index.js";
+// import { PrismaClient } from "@prisma/client";
 import { PrismaNeon } from '@prisma/adapter-neon'
 
 const connectionString = `${process.env.DATABASE_URL}`
