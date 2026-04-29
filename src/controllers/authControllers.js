@@ -64,6 +64,18 @@ const login = async (req, res) => {
             .json({ error: "invalid password" })
     }
 
+    // Generate JWT Token
+
+    res.status(201).json({
+        status: "successfully logged in",
+        data: {
+            user: {
+                id: user.id,
+                email: email
+            }
+        }
+    })
+
 }
 
 export { register, login }
