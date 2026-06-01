@@ -8,7 +8,7 @@ const adapter = new PrismaPg({
 
 const prisma = new PrismaClient({ adapter });
 
-const userId = "ced0a237-93bc-4e7d-89e9-706f2564db27"
+const userId = "6ef54b98-4d39-4d51-a11d-4de16d4cee9c"
 
 const movies = [
     {
